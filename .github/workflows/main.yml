@@ -1,7 +1,7 @@
 name: Hprofile Actions
 on: workflow_dispatch
 jobs:
-   - Testing:
+    Testing:
       runs-on: ubuntu-latest
       steps:
         - name: Code checkout
@@ -36,7 +36,7 @@ jobs:
             -Dsonar.jacoco.reportsPath=target/jacoco.exec 
             -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
             -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/
-   - BUILD_AND_PUBLISH:
+    BUILD_AND_PUBLISH:
         needs: Testing
         runs-on: ubuntu-latest
         steps:
