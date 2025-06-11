@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "vproapp",
-            "image": "307946632479.dkr.ecr.ap-south-1.amazonaws.com/myregistry:latest",
+            "image": "307946632479.dkr.ecr.ap-south-1.amazonaws.com/myregistry",
             "cpu": 0,
             "portMappings": [
                 {
