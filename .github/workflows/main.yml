@@ -68,7 +68,7 @@
                 dockerfile: ./Dockerfile
                 context: ./
       DEPLOY:
-          needs: Testing
+          needs: BUILD_AND_PUBLISH
           runs-on: ubuntu-latest
           steps:
             - name: Code checkout
